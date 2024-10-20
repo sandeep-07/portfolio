@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={jetbrainsMono.variable}>
+      <body className={`${jetbrainsMono.variable} container mx-auto`}>
         <Header />
         <AnimateLoader>{children}</AnimateLoader>
         <StairTransition />

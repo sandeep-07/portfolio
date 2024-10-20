@@ -7,6 +7,7 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./lib/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     container: {
@@ -29,6 +30,10 @@ const config: Config = {
           hover: "00e187",
         },
       },
+      textStroke: {
+        DEFAULT: "1px #ffffff", // default white stroke
+        hover: "1px #00ff99", // green stroke on hover
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -37,6 +42,20 @@ const config: Config = {
     },
   },
 
-  plugins: [tailwindcssAnimate],
+  plugins: [
+    tailwindcssAnimate,
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".text-outline": {
+          "-webkit-text-stroke": "1px #ffffff",
+        },
+        ".text-outline-hover:hover": {
+          "-webkit-text-stroke": "1px #00ff99",
+        },
+      };
+
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+  ],
 };
 export default config;
