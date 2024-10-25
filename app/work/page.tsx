@@ -19,7 +19,7 @@ const projects = [
     description:
       "Designed and implemented a web-based File Explorer using JavaScript, React.js, and Redux, allowing users to create, delete, and organize files and folders in a user-friendly interface. Integrated caching for optimized state management and efficient storage of state objects, making it resemble a virtual operating system.",
     stack: [{ name: "React" }, { name: "Redux" }, { name: "TypeScript" }],
-    image: "",
+    image: "/assets/image.png",
     live: "https://file-management-system-5wty4fx7t-sandeep-07.vercel.app/",
     github: "https://github.com/sandeep-07/file-manager",
   },
