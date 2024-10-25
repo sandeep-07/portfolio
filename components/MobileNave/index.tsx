@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 const MobileNav = () => {
   const links = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
+    { name: "Services", href: "/services" },
     { name: "Resume", href: "/resume" },
     { name: "Contact", href: "/contact" },
   ];
