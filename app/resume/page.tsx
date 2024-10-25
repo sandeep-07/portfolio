@@ -5,17 +5,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import { SiTypescript, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
-// import {
-//   Tooltip,
-//   TooltipContent,
-//   TooltipProvider,
-//   TooltipTrigger
-// } from '@/components/ui/tooltip'
-
-// import {
-//   ScrollArea
-// } from "@/components/ui/scroll-area";
-
 import { motion } from "framer-motion";
 import { ReusableTooltip } from "@/components/Tooltip";
 
@@ -25,7 +14,7 @@ const about = {
   info: [
     {
       fieldName: "Name",
-      fieldValue: "John Doe",
+      fieldValue: "Sandeep Sharma",
     },
     {
       fieldName: "Email",
@@ -49,7 +38,7 @@ const about = {
     },
     {
       fieldName: "Languages",
-      fieldValue: "Enlish, India",
+      fieldValue: "Enlish, Hindi",
     },
   ],
 };
@@ -57,31 +46,36 @@ const about = {
 const experience = {
   icon: "",
   title: "Experience",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
+  description:
+    "Experienced Software Engineer with a solid foundation in full-stack development, specializing in crafting scalable applications and UI solutions.",
   info: [
     {
-      title: "Frontend Developer",
-      company: "Google",
-      date: "2018 - 2020",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
+      title: "Founding Frontend Engineer",
+      company: "Keychain",
+      date: "November 2023 - Present",
+      description:
+        "As a Founding Engineer at Keychain, I improved SEO, built a scalable design system, and developed a revenue-boosting admin tool while enhancing system reliability with error tracking and monitoring",
     },
     {
-      title: "Backend Developer",
-      company: "Facebook",
-      date: "2018 - 2020",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
+      title: "Frontent Developer",
+      company: "Groww",
+      date: "2022- 2023",
+      description:
+        "At Groww, I enhanced website performance through SDK integrations, bundle size monitoring, and automation tools, contributing to a seamless user onboarding experience",
     },
     {
-      title: "Fullstack Developer",
+      title: "Groww Intern",
       company: "Amazon",
-      date: "2018 - 2020",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
+      date: "2021 - 2022",
+      description:
+        "Made user onboarding flows, and reuable encryption packages hosted on npm",
     },
     {
-      title: "UI/UX Designer",
-      company: "Microsoft",
-      date: "2018 - 2020",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
+      title: "App Intern",
+      company: "Dashmed",
+      date: "2021 - 2021",
+      description:
+        "Developed user flows in React Native for patient appointments, medication reminders enhancing user experience in the medical app.",
     },
   ],
 };
@@ -148,7 +142,9 @@ const Resume = () => {
             <p className="text-4xl">Why hire me?</p>
             <p className="text-white/70 text-sm">
               {" "}
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit
+              Experienced in Next.js, React, and UI/UX, I build high-quality,
+              user-centered applications with a proven track record at Keychain
+              and Groww.
             </p>
             <TabsList className="flex flex-col gap-6">
               <TabsTrigger value="experience">Experience</TabsTrigger>

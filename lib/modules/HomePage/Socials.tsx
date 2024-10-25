@@ -1,23 +1,18 @@
 import { Button } from "@/components/ui/button";
-import { DownloadIcon, Github, Linkedin, Twitter } from "lucide-react";
+import { DownloadIcon, Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 
 const socials = [
   {
     name: "Github",
-    link: "",
+    link: "https://github.com/sandeep-07",
     icon: <Github />,
   },
   {
     namwe: "Linkedin",
-    link: "",
+    link: "https://www.linkedin.com/in/sandeep-sharma2/",
     icon: <Linkedin />,
-  },
-  {
-    name: "Twitter",
-    link: "",
-    icon: <Twitter />,
-  },
+  }
 ];
 
 const Socials = () => {

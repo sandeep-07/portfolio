@@ -10,18 +10,18 @@ import { useState } from "react";
 import Image from "next/image";
 import WorkSliderBtns from "@/lib/modules/Work/WorkSliderButtons";
 
+
 const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "Project 1",
+    title: "File Explorer",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui.",
-    stack: [{ name: "React" }, { name: "TypeScript" }, { name: "TailwindCSS" }],
-    image:
-      "https://plus.unsplash.com/premium_photo-1664444320101-d277eac712d2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2Vic2l0ZSUyMHByb2plY3RzfGVufDB8fDB8fHww",
-    live: "",
-    github: "",
+      "Designed and implemented a web-based File Explorer using JavaScript, React.js, and Redux, allowing users to create, delete, and organize files and folders in a user-friendly interface. Integrated caching for optimized state management and efficient storage of state objects, making it resemble a virtual operating system.",
+    stack: [{ name: "React" }, { name: "Redux" }, { name: "TypeScript" }],
+    image: "/assets/image.png",
+    live: "https://file-management-system-5wty4fx7t-sandeep-07.vercel.app/",
+    github: "https://github.com/sandeep-07/file-manager",
   },
   {
     num: "02",

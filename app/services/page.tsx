@@ -4,24 +4,26 @@ import { ArrowRight } from "lucide-react";
 const services = [
   {
     name: "Web Development",
-    description: "We build web applications using modern technologies.",
+    description:
+      "Crafting high-performance web applications with cutting-edge technologies to deliver responsive and user-friendly digital solutions.",
     num: "01",
-  },
-  {
-    name: "Mobile Development",
-    description: "We build mobile applications for both Android and iOS.",
-    num: "02",
   },
   {
     name: "UI/UX Design",
     description:
-      "We design user interfaces that are easy to use and intuitive.",
+      "Designing captivating and seamless user experiences for both Android and iOS platforms, prioritizing accessibility and aesthetic appeal.",
+    num: "02",
+  },
+  {
+    name: "AWS Solutions",
+    description:
+      "Implementing robust, scalable AWS infrastructure to ensure secure, efficient cloud solutions tailored to your business needs.",
     num: "03",
   },
   {
     name: "SEO Optimization",
     description:
-      "We optimize websites for search engines to increase visibility.",
+      "Enhancing website visibility through proven SEO techniques, helping you reach a broader audience and rank higher on search engines.",
     num: "04",
   },
 ];
@@ -40,25 +42,25 @@ const AboutPage = () => {
           },
         }}
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 mx-auto  gap-16 my-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 mx-auto gap-16 my-auto">
           {services.map((service) => (
-            <div key={service.num}>
-              <div className="border-b  pb-8 border-white/30 pt-12 flex flex-1 flex-col  gap-4">
+            <div key={service.num} className="group">
+              <div className="border-b group w-full pb-8 border-white/30 min-h-[280px] pt-12 flex flex-1 flex-col gap-4">
                 <div className="flex justify-between">
-                  <h1 className="text-5xl text-outline text-transparent text-outline-hover font-extrabold transition-all duration-300">
+                  <h1 className="text-5xl text-outline text-transparent text-outline-hover font-extrabold transition-all duration-300 group-hover:text-outline-hover">
                     {service.num}
                   </h1>
-                  <div className="bg-slate-100/80 text-primary  rotate-45 cursor-pointer group-hover:bg-accent hover:-rotate-45 transition-all duration-500 items-center justify-center rounded-full p-2">
+                  <div className="bg-slate-100/80 text-primary rotate-45 cursor-pointer hover:-rotate-45 transition-all duration-500 items-center justify-center rounded-full p-2 ">
                     <ArrowRight
                       size="30"
                       style={{ width: "30px", height: "30px" }}
                     />
                   </div>
                 </div>
-                <h2 className="text-4xl group-hover:text-accent text-outline-hover transition-all duration-500">
+                <h2 className="text-4xl transition-all duration-500 group-hover:text-accent">
                   {service.name}
                 </h2>
-                <p className="text-sm text-white/60">{service.description}</p>
+                <p className="text-sm text-white/60 ">{service.description}</p>
               </div>
             </div>
           ))}

@@ -1,6 +1,12 @@
 {
   "name": "sandeep-portfolio",
   "version": "0.1.0",
+  "directories": {
+    "public": "public"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
   "private": true,
   "scripts": {
     "dev": "next dev",
