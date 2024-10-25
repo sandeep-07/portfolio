@@ -4,10 +4,10 @@ import CountUp from "react-countup";
 const Stats = () => {
   return (
     <div className="grid grid-cols-2 place-items-center  xl:justify-between py-10  xl:flex-wrap xl:flex  xl:flex-row">
-      <StateComponent description="Years of Experience" value={12} />
-      <StateComponent description="Projects Completed" value={26} />
-      <StateComponent description="Technologies Mastered" value={8} />
-      <StateComponent description="Code Commits" value={98} />
+      <StateComponent description="Years of Experience" value={2} />
+      <StateComponent description="Projects Completed" value={7} />
+      <StateComponent description="Technologies Mastered" value={5} />
+      <StateComponent description="Blogs Published" value={3} />
     </div>
   );
 };

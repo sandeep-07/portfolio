@@ -14,7 +14,7 @@ export default function Home() {
           </h1>
           <p className="max-w-[500px] mb-9 text-white/80">
             {" "}
-            I excel at crafting elegant digital experiences and I am proficient
+            I excel at crafting seamless web experiences and I am proficient
             in various programming languages and technologies.{" "}
           </p>
           <Socials />
