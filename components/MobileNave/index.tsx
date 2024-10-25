@@ -10,6 +10,7 @@ const MobileNav = () => {
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
     { name: "Resume", href: "/resume" },
+    { name: "Work", href: "/work" },
     { name: "Contact", href: "/contact" },
   ];
 

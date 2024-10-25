@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
+import { CSSRuleObject } from "tailwindcss/types/config";
 
 const config: Config = {
   darkMode: ["class"],
@@ -44,7 +45,18 @@ const config: Config = {
 
   plugins: [
     tailwindcssAnimate,
-    function ({ addUtilities }) {
+    function ({
+      addUtilities,
+    }: {
+      addUtilities(
+        utilities: CSSRuleObject | CSSRuleObject[],
+        options?: Partial<{
+          respectPrefix?: boolean;
+          respectImportant?: boolean;
+          variants?: string[];
+        }>
+      ): void;
+    }) {
       const newUtilities = {
         ".text-outline": {
           "-webkit-text-stroke": "1px #ffffff",
@@ -53,8 +65,8 @@ const config: Config = {
           "-webkit-text-stroke": "1px #00ff99",
         },
       };
-
-      addUtilities(newUtilities, ["responsive", "hover"]);
+    
+      addUtilities(newUtilities, { variants: ["responsive", "hover"] });
     },
   ],
 };

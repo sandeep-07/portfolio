@@ -75,7 +75,7 @@ const Work = () => {
             <div className="flex flex-col gap-[30px] h-[50%]">
               {/* project num */}
               <div
-                className="text-8xl leading-none font-extrabold text-transparent
+                className="xl:text-8xl text-4xl leading-none font-extrabold text-transparent
               text-outline "
               >
                 {project.num}
@@ -83,7 +83,7 @@ const Work = () => {
 
               {/* project category */}
               <h2
-                className="text-[42px] font-bold leading-none
+                className="xl:text-[42px] text-[20px] font-bold leading-none
               text-white group-hover:text-accent transition-all duration-500 capitalize
               "
               >
@@ -91,7 +91,9 @@ const Work = () => {
               </h2>
 
               {/* project description */}
-              <p className="text-white/60">{project.description}</p>
+              <p className="text-white/60 xl:text-base text-sm">
+                {project.description}
+              </p>
 
               {/* stack */}
               <ul className="flex gap-4">
@@ -141,8 +143,8 @@ const Work = () => {
             >
               {projects.map((project, index) => {
                 return (
-                  <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                  <SwiperSlide key={index} className="w-full ">
+                    <div className="xl:h-[460px] h-[200px]  relative group flex justify-center items-center bg-pink-50/20">
                       {/* {overlay} */}
 
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
@@ -161,7 +163,7 @@ const Work = () => {
                 );
               })}
               <WorkSliderBtns
-                containerStyles={`flex gap-2 absolute right-0 bottom-0 [calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between
+                containerStyles={` flex gap-2 absolute right-0 bottom-0 [calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between
                 xl:w-max xl:justify-none `}
                 btnStyles={`bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center
               items-center transition-all `}
@@ -173,6 +175,5 @@ const Work = () => {
     </motion.div>
   );
 };
-
 
 export default Work;

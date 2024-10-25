@@ -16,8 +16,8 @@ const Contact = () => {
       }}
       className="min-h-[80vh] flex flex-col  py-12 xl:px-0"
     >
-      <div className="flex gap-16 ">
-        <div className="w-7/12  bg-[#232329] min-h-[70vh] px-12 py-12 rounded-[8px]">
+      <div className="flex flex-col  xl:flex-row gap-16 ">
+        <div className="w-full xl:w-7/12 order-2 xl:order-none  bg-[#232329] min-h-[70vh] px-12 py-12 rounded-[8px]">
           <p className="text-2xl text-accent">Let&apos;s work together</p>
           <p className=" text-white/60 leading-8 text-sm mt-4">
             I am available for freelance work. Connect with me through the
@@ -39,9 +39,11 @@ const Contact = () => {
             />
           </div>
 
-          <Button className="bg-accent text-primary px-6 rounded-full mt-6">Send Message</Button>
+          <Button className="bg-accent text-primary px-6 rounded-full mt-6">
+            Send Message
+          </Button>
         </div>
-        <div className="w-5/12 flex flex-col gap-12 justify-center pl-12">
+        <div className="w-full xl:order-2 order-none  xl:w-5/12 flex flex-col gap-12 justify-center pl-12">
           <div className="flex gap-4">
             <div className=" flex text-accent h-16 w-16 justify-center items-center bg-[#232329]">
               <FaPhoneAlt size={20} />
