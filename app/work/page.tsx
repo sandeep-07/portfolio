@@ -28,12 +28,11 @@ const projects = [
     category: "backend",
     title: "Project 2",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui.",
-    stack: [{ name: "Node.js" }, { name: "Express" }, { name: "MongoDB" }],
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2Vic2l0ZSUyMHByb2plY3RzfGVufDB8fDB8fHww",
-    live: "",
-    github: "",
+      "An ecommerce website built with React.js and Redux on the frontend a. The website allows users to browse products, add them to their cart, and make purchases.",
+    stack: [{ name: "React.js" }, { name: "Redux" }],
+    image: "/assets/estore.png",
+    live: "https://cocky-allen-7068e0.netlify.app/",
+    github: "https://github.com/sandeep-07/E-Shop",
   },
   {
     num: "03",

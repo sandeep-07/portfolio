@@ -7,6 +7,7 @@ import { SiTypescript, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
 import { motion } from "framer-motion";
 import { ReusableTooltip } from "@/components/Tooltip";
+import Image from "next/image";
 
 const about = {
   title: "About Me",
@@ -52,6 +53,7 @@ const experience = {
     {
       title: "Founding Frontend Engineer",
       company: "Keychain",
+      logo: "/assets/keychain-logo.webp",
       date: "November 2023 - Present",
       description:
         "As a Founding Engineer at Keychain, I improved SEO, built a scalable design system, and developed a revenue-boosting admin tool while enhancing system reliability with error tracking and monitoring",
@@ -59,14 +61,16 @@ const experience = {
     {
       title: "Frontent Developer",
       company: "Groww",
+      logo: "/assets/groww.jpeg",
       date: "2022- 2023",
       description:
         "At Groww, I enhanced website performance through SDK integrations, bundle size monitoring, and automation tools, contributing to a seamless user onboarding experience",
     },
     {
-      title: "Groww Intern",
-      company: "Amazon",
+      title: "Web Intern",
+      company: "Groww",
       date: "2021 - 2022",
+      logo: "/assets/groww.jpeg",
       description:
         "Made user onboarding flows, and reuable encryption packages hosted on npm",
     },
@@ -74,6 +78,7 @@ const experience = {
       title: "App Intern",
       company: "Dashmed",
       date: "2021 - 2021",
+      logo: "/assets/download.png",
       description:
         "Developed user flows in React Native for patient appointments, medication reminders enhancing user experience in the medical app.",
     },
@@ -181,11 +186,20 @@ const Experience = () => {
         {experience.info.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col gap-2 bg-[#232329] px-8 py-8 rounded-[6px]"
+            className="flex flex-col xl:items-start items-center gap-2 bg-[#232329] px-8 py-8 rounded-[6px]"
           >
             <p className="text-sm text-accent ">{item.date}</p>
             <p className="text-xl">{item.title}</p>
-            <p className="text-white/70 text-sm">{item.company}</p>
+            <div className="flex gap-2">
+              <p className="">{item.company}</p>
+              <Image
+                src={item.logo}
+                width={20}
+                height={20}
+                className="object-contain zoom-in-150"
+                alt={"logo"}
+              />
+            </div>
             <p className="text-white/70 text-sm">{item.description}</p>
           </div>
         ))}

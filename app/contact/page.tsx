@@ -117,7 +117,7 @@ const Contact = () => {
             </div>
             <Button
               disabled={state.submitting}
-              className="bg-accent text-primary px-6 rounded-full mt-6"
+              className="bg-accent hover:bg-accent-hover  text-primary px-6 rounded-full mt-6"
             >
               Send Message
             </Button>

@@ -18,6 +18,7 @@ const socials = [
 const Socials = () => {
   return (
     <div className="flex-col flex items-center gap-8 xl:flex-row">
+      <Link target="_blank" href={'https://drive.google.com/file/d/1HBLR2QCut_QFPvolmWX4V-BUOjt3yn_j/view?usp=sharing'}>
       <Button
         variant="outline"
         size={"lg"}
@@ -26,6 +27,7 @@ const Socials = () => {
         <span>Downoload CV</span>
         <DownloadIcon />
       </Button>
+      </Link>
 
       <div className="flex gap-8 xl:flex-row">
         {socials.map((social) => (
