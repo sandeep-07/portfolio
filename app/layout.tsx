@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header.tsx";
 import AnimateLoader from "@/components/AnimateLoader";
 import StairTransition from "@/components/StairTransition";
+import { Toaster } from "@/components/ui/toaster";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Header />
         <AnimateLoader>{children}</AnimateLoader>
         <StairTransition />
+        <Toaster />
       </body>
     </html>
   );

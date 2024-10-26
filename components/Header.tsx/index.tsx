@@ -16,7 +16,7 @@ const Header = () => {
         <div className="hidden items-center  xl:flex gap-8">
           <Navbar />
           <Link href="/contact">
-            <Button className="text-black px-6 bg-accent rounded-full">
+            <Button className="text-black px-6 bg-accent hover:bg-transparent hover:text-accent hover:border-accent hover:border  rounded-full">
               {" "}
               Hire Me{" "}
             </Button>
