@@ -10,7 +10,6 @@ import { useState } from "react";
 import Image from "next/image";
 import WorkSliderBtns from "@/lib/modules/Work/WorkSliderButtons";
 
-
 const projects = [
   {
     num: "01",
@@ -33,18 +32,6 @@ const projects = [
     image: "/assets/estore.png",
     live: "https://cocky-allen-7068e0.netlify.app/",
     github: "https://github.com/sandeep-07/E-Shop",
-  },
-  {
-    num: "03",
-    category: "fullstack",
-    title: "Project 3",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui.",
-    stack: [{ name: "React" }, { name: "Node.js" }, { name: "MongoDB" }],
-    image:
-      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdlYnNpdGUlMjBwcm9qZWN0c3xlbnwwfHwwfHx8MA%3D%3D",
-    live: "",
-    github: "",
   },
 ];
 

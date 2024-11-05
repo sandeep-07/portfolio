@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const about = {
   title: "About Me",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing ",
+  description: "Frontend Dev excel at bringing designs to life",
   info: [
     {
       fieldName: "Name",
